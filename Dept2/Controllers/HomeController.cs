@@ -1,4 +1,5 @@
-﻿using Dept2.Models;
+﻿using Dept2.Data;
+using Dept2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,15 +13,18 @@ namespace Dept2.Controllers
    public class HomeController : Controller
    {
       private readonly ILogger<HomeController> _logger;
+      readonly ApplicationDbContext _db;
 
-      public HomeController(ILogger<HomeController> logger)
+      public HomeController(ApplicationDbContext context, ILogger<HomeController> logger)
       {
+         _db = context;
          _logger = logger;
       }
 
       public IActionResult Index()
       {
-         return View();
+         var news = _db.News.ToArray();
+         return View(news);
       }
 
       public IActionResult Privacy()
