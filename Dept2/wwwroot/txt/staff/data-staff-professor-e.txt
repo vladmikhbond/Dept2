@@ -1,0 +1,83 @@
+dudar.jpg
+
+Head of the Department of Software Engineering,  Candidate of Science (Technology), Professor  
+
+<a href="http://nure.ua/en/staff/zoia-dudar"> Zoia Dudar</a>
+
+erohin.jpg
+
+Dean of Faculty of Computer Science, Sciences, Professor, Scientific Head of Educational and scientific laboratory IHSS
+
+<a href="http://nure.ua/en/staff/andriy-yerokhin"> Andriy Yerokhin </a>
+
+belous.jpg
+
+Professor, Candidate of Technical Sciences (Ph.D.), PhD, Director (on a voluntary basis) the Outsourcing Scientific Training And Production Center (OSTPC) 
+
+<a href="http://nure.ua/en/staff/nataliya-bilous"> Nataliya Bilous </a>
+
+bondarev.jpg
+
+Professor, Candidate of Technical Sciences (Ph.D.), PhD
+
+<a href="http://nure.ua/en/staff/volodymyr-mykhailovych-bondariev"> Volodymyr Bondariev </a>
+
+vlasenko.jpg
+
+Professor, Doctor of Technical Sciences, Professor
+
+<a href="http://nure.ua/en/staff/larisa-vlasenko"> Larisa Vlasenko </a>
+
+kachko.jpg
+
+Professor, Candidate of Technical Sciences (Ph.D.), PhD
+
+<a href="http://nure.ua/en/staff/olena-kachko"> Olena Kachko </a>
+
+lesnaya.jpg
+
+Professor, Candidate of Technical Sciences (Ph.D.), Professor
+
+<a href="http://nure.ua/en/staff/natalya-lesna"> Natalya Lesna </a>
+
+rutkas.jpg
+
+Professor, Doctor of Physics and Mathematics, Professor
+
+<a href="http://nure.ua/en/staff/anatoliy-rutkas"> Anatoliy Rutkas  </a>
+
+chetverikov.jpg
+
+Professor, Chief Editor of Scientific Journal "Bionics of Intelligence", Doctor of Engineering Sciences, Professor
+
+<a href="http://nure.ua/en/staff/grigorij-chetverykov"> Grigorij Chetverykov </a>
+
+shubin.jpg
+
+Professor, Deputy head of the Educational-Methodical Division, Candidate of Technical Sciences, Associate Professor
+
+<a href="http://nure.ua/en/staff/igor-shubin"> Igor Shubin </a>
+
+galuza.jpg
+
+Professor(part time), Doctor of Science (Physics and Mathematics)
+
+<a href="http://nure.ua/en/staff/alexey-galuza"> Alexey Galuza </a>
+
+Mashtalir_VP.jpg
+
+Professor (part time),Professor of Department Informatics,  Doctor of Engineering Sciences, Professor 
+
+<a href="http://nure.ua/en/staff/volodymyr-mashtalir"> Volodymyr Mashtalir</a> 
+
+smelyakov_ks.jpg
+
+Professor (part time), Professor of the Department of Electronic Computers, Doctor of Technical Sciences, Professor
+
+<a href="https://nure.ua/en/staff/kyrylo-smelyakov"> Kyrylo Smelyakov </a>
+
+Shostak.jpg
+
+Professor (part time), Doctor of Engineering Sciences, Professor
+
+<a href="https://nure.ua/en/staff/igor-shostak"> Igor Shostak </a>

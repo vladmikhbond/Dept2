@@ -1,0 +1,83 @@
+Kozel_NB.jpg
+
+Ст.викладач
+<a href="http://nure.ua/staff/natalya-borisivna-kozel"> Козел Наталя Борисівна</a>
+(сумісник)
+
+Керування дипломними проектами
+
+liapota.jpg
+
+Старший викладач
+<a href="http://nure.ua/staff/vitaliy-mikolayovich-lyapota"> Ляпота Віталій Миколайович</a>
+
+*Теорія складності (advanced)
+
+novikov.jpg
+
+Старший викладач 
+<a href="http://nure.ua/staff/yuriy-sergiyovich-novikov"> Новіков Юрій Сергійович</a>
+
+Моделювання та аналіз програмного забезпечення; 
+*Програмні бібліотеки підтримки комп`ютерноі графіки;
+Основи комп`ютерноі графіки та гейм дизайн;
+*Розробка ігрових застосувань;
+Гейм-дизайн
+
+Oliynik_OV.jpg
+
+Старший викладач 
+<a href="http://nure.ua/staff/olena-volodimirivna-oliynik"> Олійник Олена Володимирівна</a>
+
+Комп'ютерна дискретна математика;
+Людино-машинна взаємодія;
+Паралельне програмування;
+Теорія ймовірностей та математична статистика
+
+samantsov.jpg
+
+Ст.викладач
+<a href="http://nure.ua/staff/oleksandr-oleksandrovich-samantsov"> Саманцов Олександр Олександрович</a>
+
+*Вступ до ігровоі аналітики
+
+Skovorodnikova_VV.jpg
+
+Ст.викладач
+<a href="http://nure.ua/staff/viktoriya-valeriyivna-skovorodnikova"> Сковороднікова Вікторія Валеріївна</a>
+
+Керування курсовими проектами та практикою
+
+sokorchuk.jpg
+
+Ст.викладач
+<a href="http://nure.ua/staff/igor-petrovich-sokorchuk"> Сокорчук Ігор Петрович</a>
+
+Операційні системи UNIX;
+Скриптові мови програмування
+
+troshilo.jpg
+
+Старший викладач 
+Трощило Олександр Степанович
+(сумісник)
+
+Керування дипломними проектами та переддипломною практикою
+
+cherepanova.jpg
+
+Старший викладач 
+<a href="http://nure.ua/staff/yuliya-yuriyivna-cherepanova"> Черепанова Юлія Юріївна</a>
+
+Основи програмування;
+Об`єктно-орієнтоване програмування;
+
+shirokopetleva.jpg
+
+Старший викладач 
+<a href="http://nure.ua/staff/mariya-sergiyivna-shirokopetlyeva"> Широкопетлєва Марія Сергіївна</a>
+
+Корпоративні інформаційні системи;
+Бази даних;
+Людино-машинна взаємодія;
+*Розробка інтернет застосувань за технологією ASP.NET
