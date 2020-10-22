@@ -10,9 +10,11 @@ using Dept2.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Dept2.Controllers
 {
+    [Authorize]
     public class NewsController : Controller
     {
         public const string PIC_NEWS_PATH = "/pic/news/";
@@ -31,23 +33,25 @@ namespace Dept2.Controllers
             return View(await _db.News.ToListAsync());
         }
 
-        // GET: News/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //// GET: News/Details/5
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var news = await _db.News
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (news == null)
-            {
-                return NotFound();
-            }
+        //    var news = await _db.News
+        //        .FirstOrDefaultAsync(m => m.Id == id);
+        //    if (news == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View(news);
-        }
+        //    return View(news);
+        //}
+
+
 
         // GET: News/Create
         public IActionResult Create()
@@ -103,8 +107,8 @@ namespace Dept2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,Heading,Body,Image")] News news)
-        {
+        public async Task<IActionResult> Edit(int id, News news, IFormFile imageFile)
+      {
             if (id != news.Id)
             {
                 return NotFound();
@@ -112,6 +116,18 @@ namespace Dept2.Controllers
 
             if (ModelState.IsValid)
             {
+                if (imageFile != null)
+                {
+                   // путь к папке Files
+                   string path = PIC_NEWS_PATH + imageFile.FileName;
+                   // сохраняем файл в папку Files в каталоге wwwroot
+                   using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                   {
+                      await imageFile.CopyToAsync(fileStream);
+                   }
+                   news.ImageName = imageFile.FileName;
+                }
+
                 try
                 {
                     _db.Update(news);
