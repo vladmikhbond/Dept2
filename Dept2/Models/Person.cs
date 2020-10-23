@@ -15,6 +15,7 @@ namespace Dept2.Models
         Teacher = 3,
         Docent = 4,
         Professor = 5,
+        Head = 6
     }
 
     [Table("Persons")]
@@ -34,8 +35,8 @@ namespace Dept2.Models
         public string Resume_ru { set; get; }
         public string Resume_en { set; get; }
 
-        public Rank Rank { set; get; }          // 1-сотр  2-асс  3-преп  4-доц  5-проф      
-        public string Link { set; get; }       // for httр://nure.ua/staff/Link
+        public Rank Rank { set; get; }              
+        public string Link { set; get; }       // for httрs://nure.ua/staff/Link
         public string ImageName { set; get; }  // for /pic/staff/ImageName
     }
 }

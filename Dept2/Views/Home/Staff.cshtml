@@ -1,7 +1,8 @@
 ﻿@model Dictionary<int, List<Person>>
 @{
     ViewData["Title"] = "Staff";
-    var preps = Model[(int)Rank.Professor];
+    var preps = Model[(int)Rank.Head];
+    preps.AddRange(Model[(int)Rank.Professor]);
     preps.AddRange(Model[(int)Rank.Docent]);
     preps.AddRange(Model[(int)Rank.Teacher]);
     preps.AddRange(Model[(int)Rank.Assistant]);
@@ -11,6 +12,8 @@
 
 @foreach (Person p in preps)
 {
+    string link = "https://nure.ua/ru/staff/" + p.Link;
+
     <div class="card mb-3" style="max-width: 800px;">
         <div class="row no-gutters">
             <div class="col-md-3">
@@ -21,7 +24,25 @@
                     <h5 class="card-title">@p.Name_uk</h5>
                     <p class="card-text">@p.Post_uk</p>
                     <pre class="card-text">@p.Resume_uk</pre>
+                    <p class="card-text"> <a href="@link">ХНУРЕ</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<h2>Спiвробiтники</h2>
 
+@foreach (Person p in Model[(int)Rank.Support])
+{
+    <div class="card mb-3" style="max-width: 800px;">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <img src="~/pic/staff/@p.ImageName" class="card-img" alt="@p.Name_uk">
+            </div>
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title">@p.Name_uk</h5>
+                    <p class="card-text">@p.Post_uk</p>
                 </div>
             </div>
         </div>
