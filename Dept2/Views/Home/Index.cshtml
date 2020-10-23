@@ -1,75 +1,71 @@
-﻿@model News[]
+﻿@model IEnumerable<News>
 
 @{
-   ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 <div class="row">
 
 
-   <div class="col">
-      <div class="plaintext static">
-         <div style="float: left; width: 160px;">
-            <img src="pic/staff/dudar.jpg" alt="" width="128" height="170" /><br />
-         </div>
-         <p> Кафедра програмної інженерії існує вже 55 років, хоч і не  завжди носила цю назву. На кафедрі працюють більше 50  викладачів, у числі яких 6 докторів наук, 12 професорів, 27 доцентів, 33 кандидата наук.
-
-         <p>За час свого існування кафедра підготувала більше 500 кандидатів та докторів наук.
-         <p>Завідує кафедрою Дудар З.В., член вченої ради, член НМР, член НТР, кандидат технічних наук, професор.
-
-         <p>Кафедра програмної інженерії готує студентів за трьома ступенями вищої освіти: бакалаврів за спеціальністю 121 «Інженерія програмного забезпечення» (освітня програмою «Програмна інженерія»); магістрів за спеціальністю 121 «Інженерія програмного забезпечення» (за програмами «Інженерія програмного забезпечення» та «Програмне забезпечення систем»); докторів філософії – за спеціальністю 121 «Інженерія програмного забезпечення».
-         <p>Навчальні плани узгоджено з міжнародними стандартами підготовки програмістів.
-         <p>
-            Форма навчання – очна, заочна та заочно-дистанційна.
-            @*<p>Студенти мають широкі можливості вільного вибору дисциплін. Деякі предмети викладаються англійською мовою у окремо сформованих групах.
-               <p>Починаючи з 3 курсу студенти проходять практику в провідних ІТ-компаніях Харкова та України. Договір про співробітництво між кафедрою ПІ ХНУРЕ та компаніями Global Logic, EPAM Systems,NIX Solutions та Sigma Software дозволив створити на кафедрі лабораторії з розробки сучасного програмного забезпечення. Відкрито академічний бізнес-інкубатор «YEP!» та YEP!-клуб, які на базі ХНУРЕ є майданчиком для підтримки студентських ініціатив та стартапів.
-               <p>Практикується залучення провідних спеціалістів фірм до викладання професійно-орієнтованих дисциплін, здійснюється цільова підготовка студентів старших курсів у формі безкоштовних факультативних занять від компаній.
-               <p>Під час навчання студенти підвищують свій професійний рівень, беруть участь у роботі семінарів і гуртків, організованих на базі наукових лабораторій, гуртка «Програміст» (де студенти здобувають знання та навички з вирішування олімпіадних завдань з програмування), лабораторії GameDev (де готують студентів до розробки ігрових проектів), беруть участь у проекті «IT Talents» (що передбачає поглиблене вивчення складних алгоритмів з практичним їх застосуванням в різних областях ІТ).
-               <p>Неодноразово студенти кафедри ПІ посідали призові місця на українських та міжнародних змаганнях з програмування, гідно представляли кафедру та університет на виставках, конкурсах, конференціях та форумах.           
-               <p>В галузі освіти і науки кафедра співпрацює з Ліннеус університетом м.Вакха (Linnaeus University), Швеція, а також з Університетом Економіки (WSG) м.Бидгощ, Польща. Студенти мають можливість отримати два дипломи - український і європейський рівня «бакалавр» або «магістр», а також проходити стажування і брати участь в літніх і зимових школах з програмування.*@
-
-      </div>
-
-   </div>
-
-
-   <div class="col">
-   <h2>Новини</h2>
-      <div class="accordion" id="accordionNews">
-         @foreach (var item in Model)
-         {
-            string h1 = "heading" + item.Id;
-            string c1 = "collapse" + item.Id;
-            string date = item.Date.ToString("dd/MM/yyyy");
-            string imagePath = Dept2.Controllers.NewsController.PIC_NEWS_PATH + item.ImageName;
-
-            <div class="card">
-               <div class="card-header" id="@h1">
-                  <h5 class="mb-0">
-                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#@c1"
-                             aria-expanded="false" aria-controls="@c1">
-                        <span class="small">@date</span>
-                        @Html.Raw(item.Heading)
-                     </button>
-                  </h5>
-               </div>
-               <div id="@c1" class="collapse" aria-labelledby="@h1" data-parent="#accordionNews">
-                  <div class="card-body">
-                     @Html.Raw(item.Body)
-                     @if (!string.IsNullOrEmpty(item.ImageName))
-                     {
-                     <div>
-                        <img src="@imagePath" />
-                     </div>
-                     }
-
-                  </div>
-               </div>
+    <div class="col-md-4">
+        <div class="plaintext static">
+            <div style="float: left; width: 160px;">
+                <img src="pic/staff/dudar.jpg" alt="" width="128" height="170" /><br />
             </div>
-         }
+
+            <p> Кафедра програмної інженерії існує вже 55 років, хоч і не  завжди носила цю назву. На кафедрі працюють більше 50  викладачів, у числі яких 6 докторів наук, 12 професорів, 27 доцентів, 33 кандидата наук.
+
+            <p>За час свого існування кафедра підготувала більше 500 кандидатів та докторів наук.
+            <p>Завідує кафедрою Дудар З.В., член вченої ради, член НМР, член НТР, кандидат технічних наук, професор.
+        </div>
+        <hr />
+        Посилання на соціальні мережі: 
+        <p>https://www.facebook.com/pg/se121.nure.ua/  <br/>
+        https://www.facebook.com/groups/se121.nure.ua/ <br />
+        https://www.linkedin.com/company/se121-nure-ua/ <br />
+        https://www.instagram.com/se121.nure.ua/
+        </p>
+    </div>
 
 
-      </div>
-   </div>
+    <div class="col-md-8">
+        @*<h2>Новини</h2>*@
+        <div class="accordion" id="accordionNews">
+            @foreach (var item in Model)
+            {
+                string h1 = "heading" + item.Id;
+                string c1 = "collapse" + item.Id;
+                string date = item.Date.ToString("dd/MM/yyyy");
+                string imagePath = Dept2.Controllers.NewsController.PIC_NEWS_PATH + item.ImageName;
+                string show = item == Model.First() ? "show" : "";
+
+                <div class="card">
+                    <div class="card-header" id="@h1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#@c1"
+                                    aria-expanded="false" aria-controls="@c1">
+                                <span class="small">@date</span>
+                                @Html.Raw(item.Heading)
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="@c1" class="collapse @show" aria-labelledby="@h1" data-parent="#accordionNews">
+                        <div class="card-body">
+                            @Html.Raw(item.Body)
+                            @if (!string.IsNullOrEmpty(item.ImageName))
+                            {
+                                <div>
+                                    <img src="@imagePath" />
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
 </div>
 
 

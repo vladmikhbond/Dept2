@@ -9,21 +9,25 @@
 </head>
 <body>
     <header>
-         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
+         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
-               <a class="navbar-brand logo" asp-area="" asp-controller="Home" asp-action="Index"
+               <a class="navbar-brand logo" asp-area="" asp-controller="Home" asp-action="Index" style="color : white"
                   title="Кафедра програмної інженерії ХНУРЕ">
-                  &lt;<span style="font-size: 28px; color : white">ПI</span>&gt;
+
+                  <img src="~/pi-logo-white.svg" style="width: 100px"/>
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                      aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                </button>
                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                  @*<partial name="_LoginPartial" />*@
+                  @if (User.Identity.IsAuthenticated)
+                  {
+                  <partial name="_LoginPartial" />
+                  }
                   <ul class="navbar-nav flex-grow-1">
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">колектив</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Staff">колектив</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">абітурієнту</a>
@@ -46,9 +50,10 @@
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">контакти</a>
                      </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">π</a>
-                  </li>
+                     <li class="nav-item">
+                         @*<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">π</a>*@
+                         <a class="nav-link text-dark" asp-controller="Admin" asp-action="Index">π</a>
+                     </li>
                   </ul>
                </div>
             </div>
@@ -71,12 +76,6 @@
                    Тел: (380-57) 702-14-46<br />
                 </div>
                             
-                <div>Посилання на соціальні мережі:
-                <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/se121.nure.ua/">https://www.facebook.com/pg/se121.nure.ua/</a>
-                <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/groups/se121.nure.ua/">https://www.facebook.com/groups/se121.nure.ua/</a>
-                <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/se121-nure-ua/">https://www.linkedin.com/company/se121-nure-ua/</a>
-                <br /> <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/se121.nure.ua/">https://www.instagram.com/se121.nure.ua/</a>
-                </div>
               </div>
           </div>         
        </div>
@@ -86,6 +85,7 @@
        @*&copy; 2020 - Dept2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
 
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

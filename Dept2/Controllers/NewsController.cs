@@ -30,7 +30,9 @@ namespace Dept2.Controllers
         // GET: News
         public async Task<IActionResult> Index()
         {
-            return View(await _db.News.ToListAsync());
+            var news = await _db.News
+                .ToListAsync();
+            return View(news);
         }
 
         //// GET: News/Details/5

@@ -73,14 +73,11 @@ body {
 }
 
 /*********************************************************************/
-
-.logo {
-   /* логотип в левом углу главного меню */
-   font-family: Arial;
-   font-weight: bold;
-   font-style: italic;
-   font-size: 24px;
-   color: white;
+/* фон */
+nav {
+    /*background: url(https://c1.wallpaperflare.com/preview/439/614/439/programming-code-screen-java.jpg);*/
+    /*background-size: 100%;*/
+    background-color: blue;
 }
 
 .plaintext {
@@ -88,16 +85,17 @@ body {
    font-size: 14px;
 }
 
+/* заголовок новости */
 .card-header {
-   /* заголовок новости */
    padding: .75rem 1.25rem;
    margin: 4px;
    background-color: rgba(0,0,0,.03);
    border-bottom: 1px solid rgba(0,0,0,.125);
 
 }
+
+/* тело новости */
 .card-body {
-   /* тело новости */
    -ms-flex: 1 1 auto;
    flex: 1 1 auto;
    padding: 1.25rem;

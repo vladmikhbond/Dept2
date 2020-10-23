@@ -25,23 +25,23 @@ namespace Dept2.Controllers
             return View(await _context.Persons.ToListAsync());
         }
 
-        // GET: Staff/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //// GET: Staff/Details/5
+        //public async Task<IActionResult> Details(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var person = await _context.Persons
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (person == null)
-            {
-                return NotFound();
-            }
+        //    var person = await _context.Persons
+        //        .FirstOrDefaultAsync(m => m.Id == id);
+        //    if (person == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View(person);
-        }
+        //    return View(person);
+        //}
 
         // GET: Staff/Create
         public IActionResult Create()
@@ -54,7 +54,7 @@ namespace Dept2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name_uk,Name_ru,Name_en,Resume_uk,Resume_ru,Resume_en,Rank,Link,ImageName")] Person person)
+        public async Task<IActionResult> Create(Person person)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Dept2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name_uk,Name_ru,Name_en,Resume_uk,Resume_ru,Resume_en,Rank,Link,ImageName")] Person person)
+        public async Task<IActionResult> Edit(int id, Person person)
         {
             if (id != person.Id)
             {

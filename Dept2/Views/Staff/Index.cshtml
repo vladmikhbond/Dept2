@@ -15,21 +15,33 @@
             <th>
                 @Html.DisplayNameFor(model => model.Name_uk)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Name_ru)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name_en)
+            </th>*@
+
+            <th>
+                @Html.DisplayNameFor(model => model.Post_uk)
             </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Post_ru)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Post_en)
+            </th>*@
+
             <th>
                 @Html.DisplayNameFor(model => model.Resume_uk)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Resume_ru)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Resume_en)
-            </th>
+            </th>*@
+
             <th>
                 @Html.DisplayNameFor(model => model.Rank)
             </th>
@@ -48,21 +60,33 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name_uk)
             </td>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Name_ru)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name_en)
+            </td>*@
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Post_uk)
             </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Post_ru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Post_en)
+            </td>*@
+
             <td>
                 @Html.DisplayFor(modelItem => item.Resume_uk)
             </td>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Resume_ru)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Resume_en)
-            </td>
+            </td>*@
+
             <td>
                 @Html.DisplayFor(modelItem => item.Rank)
             </td>
@@ -74,7 +98,6 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
