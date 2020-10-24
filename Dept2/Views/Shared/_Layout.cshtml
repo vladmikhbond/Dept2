@@ -25,7 +25,7 @@
                   {
                       <partial name="_LoginPartial" />
                   }
-                  <ul class="navbar-nav flex-grow-1">
+                  <ul class="navbar-nav navbar-light flex-grow-1">
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Staff">колектив</a>
                      </li>
@@ -33,26 +33,25 @@
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Entrant">абітурієнту</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">студенту</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Student">студенту</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">наука</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Science">наука</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">освіта</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Education">освіта</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">випускники</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Graduates">випускники</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">історія</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="History">історія</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">контакти</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Conacts">контакти</a>
                      </li>
                      <li class="nav-item">
-                         @*<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">π</a>*@
-                         <a class="nav-link text-dark" asp-controller="Admin" asp-action="Index">π</a>
+                         <a class="nav-link text-light" asp-controller="Admin" asp-action="Index">π</a>
                      </li>
                   </ul>
                </div>
@@ -71,32 +70,31 @@
                <div class="col">
                    <ul class="nav navbar-dark">
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Index">головна</a>
-                       </li>
-
-                       <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Staff">колектив</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">головна</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Entrant">абітурієнту</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Staff">колектив</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">студенту</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Entrant">абітурієнту</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">наука</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Student">студенту</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">освіта</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Science">наука</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">випускники</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Education">освіта</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">історія</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Graduates">випускники</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">контакти</a>
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="History">історія</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Conacts">контакти</a>
                        </li>
                    </ul>
                    <span>&copy; 2020 - Dept2 </span>

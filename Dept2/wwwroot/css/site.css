@@ -100,3 +100,14 @@ nav {
    flex: 1 1 auto;
    padding: 1.25rem;
 }
+
+/* ----------------------------------------- old site styles -------------------------------- */
+
+.page_header {
+    text-align: center;
+    color: navy;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}

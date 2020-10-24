@@ -43,8 +43,39 @@ namespace Dept2.Controllers
             return View(persons);
         }
 
-        // GET: Home/Entrant
+
         public IActionResult Entrant()
+        {
+            return View();
+        }
+
+
+        public IActionResult Student()
+        {
+            return View();
+        }
+
+        public IActionResult Science()
+        {
+            return View();
+        }
+
+        public IActionResult Education()
+        {
+            return View();
+        }
+
+        public IActionResult Graduates()
+        {
+            return View();
+        }
+
+        public IActionResult History()
+        {
+            return View();
+        }
+
+        public IActionResult Conacts()
         {
             return View();
         }
