@@ -23,14 +23,14 @@
                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                   @if (User.Identity.IsAuthenticated)
                   {
-                  <partial name="_LoginPartial" />
+                      <partial name="_LoginPartial" />
                   }
                   <ul class="navbar-nav flex-grow-1">
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Staff">колектив</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">абітурієнту</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Entrant">абітурієнту</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">студенту</a>
@@ -66,23 +66,46 @@
     </div>
     
     <footer class="border-top footer text-muted">
-       <div class="container">
-          <div class="row">
-             <div class="col">  
-                <div>
-                   Контакти:
-                   <br /> e-mail: <a href="mailto:d_se@nure.ua">d_se@nure.ua</a> <br />
-                   Україна, 61166, м. Харків, пр. Науки 14, ХНУРЕ, к.267, станція метро «Наукова» <br />
-                   Тел: (380-57) 702-14-46<br />
-                </div>
-                            
-              </div>
-          </div>         
-       </div>
+        <div class="container">
+           <div class="row">
+               <div class="col">
+                   <ul class="nav navbar-dark">
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Index">головна</a>
+                       </li>
+
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Staff">колектив</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Entrant">абітурієнту</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">студенту</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">наука</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">освіта</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">випускники</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">історія</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" asp-controller="Home" asp-action="Privacy">контакти</a>
+                       </li>
+                   </ul>
+                   <span>&copy; 2020 - Dept2 </span>
+
+               </div>
+           </div>
+        </div>
 
 
-
-       @*&copy; 2020 - Dept2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
 
     </footer>
 

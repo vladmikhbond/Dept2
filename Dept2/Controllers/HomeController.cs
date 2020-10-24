@@ -35,12 +35,18 @@ namespace Dept2.Controllers
         // GET: Home/Staff
         public IActionResult Staff()
         {
-            Dictionary<int, List<Person> >  persons = 
+            Dictionary<int, List<Person>> persons =
                 _db.Persons
                 .AsEnumerable()
                 .GroupBy(p => (int)p.Rank)
-                .ToDictionary(g => g.Key, g => g.OrderBy(g => g.Name_uk).ToList());              
+                .ToDictionary(g => g.Key, g => g.OrderBy(g => g.Name_uk).ToList());
             return View(persons);
+        }
+
+        // GET: Home/Entrant
+        public IActionResult Entrant()
+        {
+            return View();
         }
 
 
