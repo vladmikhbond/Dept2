@@ -50,9 +50,6 @@
                      <li class="nav-item">
                         <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Conacts">контакти</a>
                      </li>
-                     <li class="nav-item">
-                         <a class="nav-link text-light" asp-controller="Admin" asp-action="Index">π</a>
-                     </li>
                   </ul>
                </div>
             </div>
@@ -68,7 +65,7 @@
         <div class="container">
            <div class="row">
                <div class="col">
-                   <ul class="nav navbar-dark">
+                   <ul class="nav">
                        <li class="nav-item">
                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">головна</a>
                        </li>
@@ -97,7 +94,10 @@
                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Conacts">контакти</a>
                        </li>
                    </ul>
-                   <span>&copy; 2020 - Dept2 </span>
+                   <div style="color: #0366d6; text-align:center;">                      
+                       <a asp-controller="Admin" asp-action="Index">&copy;</a>
+                        2011-2020 Кафедра програмної інженерії
+                   </div>
 
                </div>
            </div>
